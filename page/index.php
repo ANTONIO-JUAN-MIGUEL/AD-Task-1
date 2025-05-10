@@ -28,41 +28,51 @@ $styleImage = "slugger-style.jpg";
 <body>
     <?php include '../components/index.php'; ?>
     
-    <div class="content-box">
+    <div class="main-container">
         <h1><?php echo $pageTitle; ?></h1>
         
-        <h2>Basic Punches</h2>
-        <div class="punch-container">
-            <?php foreach($basicPunches as $name => $data): ?>
-                <div class="punch-card">
-                    <img src="../assets/img/<?php echo $data[1]; ?>" alt="<?php echo $name; ?>">
-                    <h3><?php echo $name; ?></h3>
-                    <p><?php echo $data[0]; ?></p>
-                </div>
-            <?php endforeach; ?>
-        </div>
-        
-        <h2>Fighting Style</h2>
-        <div class="style-box">
-            <img src="../assets/img/<?php echo $styleImage; ?>" alt="<?php echo $fightingStyle; ?>">
-            <div>
-                <h3>Madman's Style: <?php echo $fightingStyle; ?></h3>
-                <p><?php echo $styleDescription; ?></p>
+        <div class="section">
+            <h2>Basic Punches</h2>
+            <div class="card-container">
+                <?php foreach($basicPunches as $name => $data): ?>
+                    <div class="card">
+                        <img src="../assets/img/<?php echo $data[1]; ?>" alt="<?php echo $name; ?>">
+                        <div class="card-content">
+                            <h3><?php echo $name; ?></h3>
+                            <p><?php echo $data[0]; ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
             </div>
         </div>
         
-        <h2>Stances</h2>
-        <div class="stance-container">
-            <?php foreach($stances as $name => $data): ?>
-                <div class="stance-card">
-                    <img src="../assets/img/<?php echo $data[1]; ?>" alt="<?php echo $name; ?>">
-                    <h3><?php echo $name; ?></h3>
-                    <p><?php echo $data[0]; ?></p>
+        <div class="section">
+            <h2>Fighting Style</h2>
+            <div class="featured-card">
+                <img src="../assets/img/<?php echo $styleImage; ?>" alt="<?php echo $fightingStyle; ?>">
+                <div class="featured-content">
+                    <h3>Madman's Style: <?php echo $fightingStyle; ?></h3>
+                    <p><?php echo $styleDescription; ?></p>
                 </div>
-            <?php endforeach; ?>
+            </div>
         </div>
         
-        <div class="back-link">
+        <div class="section">
+            <h2>Stances</h2>
+            <div class="card-container">
+                <?php foreach($stances as $name => $data): ?>
+                    <div class="card">
+                        <img src="../assets/img/<?php echo $data[1]; ?>" alt="<?php echo $name; ?>">
+                        <div class="card-content">
+                            <h3><?php echo $name; ?></h3>
+                            <p><?php echo $data[0]; ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+        </div>
+        
+        <div class="back-button">
             <a href="../index.php">Back to Home</a>
         </div>
     </div>
