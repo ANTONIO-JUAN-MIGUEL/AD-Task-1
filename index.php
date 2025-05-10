@@ -11,13 +11,14 @@
     
     <h1>Welcome to Madman's Boxing Basics!</h1>
 
-    <p>Here you will learn the basic punches in boxing: jab, straight, hook, and uppercut. My favorite and current fighting style is the Slugger/Pressure fighter.</p>
-    
-    <p>Founded by Migz "Madman" Antonio, an amateur boxer with a record of 5 wins and no losses in the light heavyweight division. I have an upcoming amateur championship match sometime this year!</p>
+    <p>Here you will learn the basic punches in boxing: Jab, Straight, Hook, and Uppercut. You will also know the 2 different kinds of stances in boxing.</p>
         
     <div class="photo-container">
         <img src="assets/img/Box.jpg" alt="Boxing Basics">
     </div>
+
+        <p>Founded by Migz "Madman" Antonio, an amateur boxer with a record of 5 wins and no losses in the light heavyweight division
+with an upcoming amateur boxing championship fight sometime this year.</p>
     
     <a href="page/index.php">Learn More About Boxing Basics</a>
 </body>
