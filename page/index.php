@@ -2,10 +2,11 @@
 // DECLARATIONS
 $pageTitle = "Boxing Basics";
 $basicPunches = [
-    "Jab" => "A quick, straight punch thrown with the lead hand (left hand if orthodox, right hand if southpaw)",
-    "Straight" => "A powerful punch thrown with the rear hand (right hand if orthodox, left hand if southpaw)",
-    "Hook" => "A semi-circular punch thrown with either hand",
-    "Uppercut" => "A vertical punch thrown upward with either hand"
+    "Jab" => "A quick, straight punch thrown with the lead hand, often used to set up other punches (left hand if orthodox, right hand if southpaw)",
+    "Straight" => "A powerful punch thrown with the rear hand. The punch is not just an arm movement, but involves the rotation of the hips, core, and shoulders to generate power.  (right hand if orthodox, left hand if southpaw)",
+    "Hook" => "A semi-circular punch thrown with either hand. It is punch delivered in a horizontal arc, typically aimed at the jaw or body. It's characterized by a bent elbow and rotation of the torso, which helps generate force. ",
+    "Uppercut" => "A vertical punch thrown upward with either hand. It usually targets the chin or upper abdomen. It's a power punch in boxing, often used in close-quarters combat. The uppercut is thrown with a bent arm, moving upwards from a low starting position. 
+"
 ];
 $stances = [
     "Orthodox" => "Right-handed stance (left foot forward)",
