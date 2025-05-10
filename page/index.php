@@ -2,14 +2,15 @@
 // DECLARATIONS
 $pageTitle = "Boxing Basics";
 $basicPunches = [
-    "Jab" => "A quick, straight punch thrown with the lead hand",
-    "Straight" => "A powerful punch thrown with the rear hand",
+    "Jab" => "A quick, straight punch thrown with the lead hand (left hand if orthodox, right hand if southpaw)",
+    "Straight" => "A powerful punch thrown with the rear hand (right hand if orthodox, left hand if southpaw)",
     "Hook" => "A semi-circular punch thrown with either hand",
-    "Uppercut" => "A vertical punch thrown upward"
+    "Uppercut" => "A vertical punch thrown upward with either hand"
 ];
 $stances = [
     "Orthodox" => "Right-handed stance (left foot forward)",
-    "Southpaw" => "Left-handed stance (right foot forward)"
+    "Southpaw" => "Left-handed stance (right foot forward)",
+    "Square" => "Feet parallel to each other, facing the opponent completely (Example of this stance is Mike Tyson, Floyd Patterson, Connor Benn.",
 ];
 $fightingStyle = "Slugger/Brawler Style";
 $styleDescription = "focuses and relies on power punches and <br> <br> constant forward movement without all that fancy footwork";
