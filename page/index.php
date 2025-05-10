@@ -10,7 +10,7 @@ $basicPunches = [
 $stances = [
     "Orthodox" => "Right-handed stance (left foot forward)",
     "Southpaw" => "Left-handed stance (right foot forward)",
-    "Square" => "Feet parallel to each other, facing the opponent completely (Example of this stance is Mike Tyson, Floyd Patterson, Connor Benn.",
+    "Square" => "Feet parallel to each other, facing the opponent completely (Example of this stance is Mike Tyson, Floyd Patterson, Connor Benn).",
 ];
 $fightingStyle = "Slugger/Brawler Style";
 $styleDescription = "focuses and relies on power punches and <br> <br> constant forward movement without all that fancy footwork";
