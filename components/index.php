@@ -1,5 +1,21 @@
-<!--the navigtion component for page-->
+<?php
+// DECLARATIONS
+$currentYear = date("Y");
+$navLinks = [
+    "Home" => "../index.php",
+    "Boxing Basics" => "../page/index.php"
+];
+?>
+
+<!-- Simple navigation component -->
 <nav>
-    <a href="../index.php">Home</a> | 
-    <a href="../page/index.php">Boxing Basics</a>
+    <?php 
+    // LOOPING through navigation links
+    foreach($navLinks as $text => $url) {
+        echo "<a href=\"$url\">$text</a>";
+        if($text != array_key_last($navLinks)) {
+            echo " | ";
+        }
+    }
+    ?>
 </nav>
