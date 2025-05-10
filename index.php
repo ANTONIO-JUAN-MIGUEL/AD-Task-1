@@ -5,8 +5,8 @@ $founderName = "Migz \"Madman\" Antonio";
 $record = "5 wins and no losses";
 $division = "light heavyweight";
 $upcomingMatch = true;
-$punchTypes = ["jab", "straight", "hook", "uppercut"];
-$fightingStyle = "Slugger/Pressure fighter";
+$punchTypes = ["Jab", "Straight", "Hook", "Uppercut"];
+$fightingStyle = "Slugger/Brawler Style";
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +24,7 @@ $fightingStyle = "Slugger/Pressure fighter";
     
     
     
-    <p>Here you will learn the basic punches in boxing: 
+    <p>Here in Madman's Boxing Basics, you will learn the basic punches in boxing: 
     <?php 
     // LOOPING
     foreach($punchTypes as $index => $punch) {
@@ -33,7 +33,7 @@ $fightingStyle = "Slugger/Pressure fighter";
             echo ", ";
         }
     }
-    ?>. His current fighting style is the <?php echo $fightingStyle; ?>.</p>
+    ?>. <br> You will also learn the different stances in boxing. His current fighting style is the <?php echo $fightingStyle; ?>.</p>
     <div class="photo-container">
         <img src="assets/img/Box.jpg" alt="Boxing Basics">
     </div>

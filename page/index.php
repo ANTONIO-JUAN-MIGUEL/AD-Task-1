@@ -11,8 +11,8 @@ $stances = [
     "Orthodox" => "Right-handed stance (left foot forward)",
     "Southpaw" => "Left-handed stance (right foot forward)"
 ];
-$fightingStyle = "Slugger/Pressure fighter";
-$styleDescription = "focuses on power punches and constant forward movement";
+$fightingStyle = "Slugger/Brawler Style";
+$styleDescription = "focuses and relies on power punches and <br> <br> constant forward movement without all that fancy footwork";
 ?>
 
 <!DOCTYPE html>
@@ -38,8 +38,9 @@ $styleDescription = "focuses on power punches and constant forward movement";
         ?>
     </ul>
     
-    <h2>Fighting Styles</h2>
-    <p>His favorite and current fighting style is the <strong><?php echo $fightingStyle; ?></strong>, which <?php echo $styleDescription; ?>.</p>
+    <h2>Fighting Style</h2>
+
+    <p style="text-align: center;">Madman's current fighting style is the <strong><?php echo $fightingStyle; ?></strong>, which <?php echo $styleDescription; ?>.</p>
     
     <h2>Stances</h2>
     <ul>
