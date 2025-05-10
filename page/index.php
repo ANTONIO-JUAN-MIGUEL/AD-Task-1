@@ -2,19 +2,19 @@
 // DECLARATIONS
 $pageTitle = "Boxing Basics";
 $basicPunches = [
-    "Jab" => "A quick, straight punch thrown with the lead hand, often used to set up other punches (left hand if orthodox, right hand if southpaw)",
-    "Straight" => "A powerful punch thrown with the rear hand. The punch is not just an arm movement, but involves the rotation of the hips, core, and shoulders to generate power.  (right hand if orthodox, left hand if southpaw)",
-    "Hook" => "A semi-circular punch thrown with either hand. It is punch delivered in a horizontal arc, typically aimed at the jaw or body. It's characterized by a bent elbow and rotation of the torso, which helps generate force. ",
-    "Uppercut" => "A vertical punch thrown upward with either hand. It usually targets the chin or upper abdomen. It's a power punch in boxing, often used in close-quarters combat. The uppercut is thrown with a bent arm, moving upwards from a low starting position. 
-"
+    "Jab" => ["A quick, straight punch thrown with the lead hand, often used to set up other punches (left hand if orthodox, right hand if southpaw)", "jab.jpg"],
+    "Straight" => ["A powerful punch thrown with the rear hand. The punch is not just an arm movement, but involves the rotation of the hips, core, and shoulders to generate power. (right hand if orthodox, left hand if southpaw)", "straight.jpg"],
+    "Hook" => ["A semi-circular punch thrown with either hand. It is punch delivered in a horizontal arc, typically aimed at the jaw or body. It's characterized by a bent elbow and rotation of the torso, which helps generate force.", "hook.jpg"],
+    "Uppercut" => ["A vertical punch thrown upward with either hand. It usually targets the chin or upper abdomen. It's a power punch in boxing, often used in close-quarters combat. The uppercut is thrown with a bent arm, moving upwards from a low starting position.", "uppercut.jpg"]
 ];
 $stances = [
-    "Orthodox" => "Right-handed stance (left foot forward)",
-    "Southpaw" => "Left-handed stance (right foot forward)",
-    "Square" => "Feet parallel to each other, facing the opponent completely (Example of this stance are Mike Tyson, Floyd Patterson, Connor Benn).",
+    "Orthodox" => ["Right-handed stance (left foot forward)", "orthodox.jpg"],
+    "Southpaw" => ["Left-handed stance (right foot forward)", "southpaw.jpg"],
+    "Square" => ["Feet parallel to each other, facing the opponent completely (Example of this stance are Mike Tyson, Floyd Patterson, Connor Benn).", "square.jpg"]
 ];
 $fightingStyle = "Slugger/Brawler Style";
-$styleDescription = "focuses and relies on power punches and <br> <br> constant forward movement without all that fancy footwork";
+$styleDescription = "focuses and relies on power punches and constant forward movement without all that fancy footwork";
+$styleImage = "slugger-style.jpg";
 ?>
 
 <!DOCTYPE html>
@@ -28,37 +28,43 @@ $styleDescription = "focuses and relies on power punches and <br> <br> constant 
 <body>
     <?php include '../components/index.php'; ?>
     
-    <h1><?php echo $pageTitle; ?></h1>
-    
-    <h2>Basic Punches</h2>
-    <ul>
-        <?php 
-        // LOOPING through punches
-        foreach($basicPunches as $punch => $description) {
-            echo "<li><strong>$punch</strong>: $description</li>";
-        }
-        ?>
-    </ul>
-    
-    <h2>Fighting Style</h2>
-
-    <p style="text-align: center;">Madman's current fighting style is the <strong><?php echo $fightingStyle; ?></strong>, which <?php echo $styleDescription; ?>.</p>
-    
-    <h2>Stances</h2>
-    <ul>
-        <?php 
-        // CONDITIONAL inside loop
-        foreach($stances as $stance => $description) {
-            echo "<li>";
-            echo "<strong>$stance</strong>: $description";
-            if($stance == "Orthodox") {
-                echo " (most common stance)";
-            }
-            echo "</li>";
-        }
-        ?>
-    </ul>
-    
-    <a href="../index.php">Back to Home</a>
+    <div class="content-box">
+        <h1><?php echo $pageTitle; ?></h1>
+        
+        <h2>Basic Punches</h2>
+        <div class="punch-container">
+            <?php foreach($basicPunches as $name => $data): ?>
+                <div class="punch-card">
+                    <img src="../assets/img/<?php echo $data[1]; ?>" alt="<?php echo $name; ?>">
+                    <h3><?php echo $name; ?></h3>
+                    <p><?php echo $data[0]; ?></p>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        
+        <h2>Fighting Style</h2>
+        <div class="style-box">
+            <img src="../assets/img/<?php echo $styleImage; ?>" alt="<?php echo $fightingStyle; ?>">
+            <div>
+                <h3>Madman's Style: <?php echo $fightingStyle; ?></h3>
+                <p><?php echo $styleDescription; ?></p>
+            </div>
+        </div>
+        
+        <h2>Stances</h2>
+        <div class="stance-container">
+            <?php foreach($stances as $name => $data): ?>
+                <div class="stance-card">
+                    <img src="../assets/img/<?php echo $data[1]; ?>" alt="<?php echo $name; ?>">
+                    <h3><?php echo $name; ?></h3>
+                    <p><?php echo $data[0]; ?></p>
+                </div>
+            <?php endforeach; ?>
+        </div>
+        
+        <div class="back-link">
+            <a href="../index.php">Back to Home</a>
+        </div>
+    </div>
 </body>
 </html>
