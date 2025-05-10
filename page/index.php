@@ -18,8 +18,14 @@
         <li><strong>Hook</strong>: A semi-circular punch thrown with either hand</li>
         <li><strong>Uppercut</strong>: A vertical punch thrown upward</li>
     </ul>
+        <h2>Fighting Styles</h2>
+    <p>My favorite and current fighting style is the <strong>Slugger/Pressure fighter</strong>, which focuses on power punches and constant forward movement.</p>
     
-    
+    <h2>Stances</h2>
+    <ul>
+        <li><strong>Orthodox</strong>: Right-handed stance (left foot forward)</li>
+        <li><strong>Southpaw</strong>: Left-handed stance (right foot forward)</li>
+    </ul>
     <a href="../index.php">Back to Home</a>
 </body>
 </html>
