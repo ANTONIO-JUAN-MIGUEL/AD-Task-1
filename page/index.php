@@ -13,7 +13,8 @@ $stances = [
     "Square" => ["Feet parallel to each other, facing the opponent completely (Example of this stance are Mike Tyson, Floyd Patterson, Connor Benn).", "square.jpg"]
 ];
 $fightingStyle = "Slugger/Brawler Style";
-$styleDescription = "focuses and relies on power punches and constant forward movement without all that fancy footwork";
+$styleDescription = "Focuses and relies on his own power and constant forward movement without all that fancy footwork. <br>
+Users of this style are usually heavyweights and light heavyweights or just someone who was born with natural power. <br>";
 $styleImage = "slugger-style.jpg";
 ?>
 
@@ -51,7 +52,7 @@ $styleImage = "slugger-style.jpg";
             <div class="featured-card">
                 <img src="../assets/img/<?php echo $styleImage; ?>" alt="<?php echo $fightingStyle; ?>">
                 <div class="featured-content">
-                    <h3>Madman's Style: <?php echo $fightingStyle; ?></h3>
+                    <h3>Used Style: <?php echo $fightingStyle; ?></h3>
                     <p><?php echo $styleDescription; ?></p>
                 </div>
             </div>
