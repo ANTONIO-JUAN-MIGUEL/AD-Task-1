@@ -61,15 +61,20 @@
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
 
-Description of the project in details.
+A boxing tutorial website built with PHP that teaches fundamental punches (jab, straight, hook, uppercut), fighting stances (orthodox, southpaw, square), and showcases the Slugger/Brawler fighting style through an immersive black/red combat-themed interface.
 
 ### Key Components
 
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
 
-- Authentication & Authorization
-- CRUD Operations for Invetory System
+- Punch technique guides with images
+
+- Stance breakdowns with visual examples
+
+- Fighting style showcase
+
+- Responsive design with hover animations
 
 ### Technology
 
@@ -77,21 +82,7 @@ Description of the project in details.
 #### Language
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
 ![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-
-#### Framework/Library
-![CodeIgniter](https://img.shields.io/badge/CodeIgniter-EF4223?style=for-the-badge&logo=codeigniter&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
-
-#### Databases
-![MySQL](https://img.shields.io/badge/MySQL-00758F?style=for-the-badge&logo=mysql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=for-the-badge&logo=postgresql&logoColor=white)
-
-#### Deployment
-![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## Rules, Practices and Principles
 
@@ -112,29 +103,32 @@ Description of the project in details.
 10. File Structure to follow below.
 
 ```
-AD-ProjectName
+AD-Task-1
 └─ assets
 |   └─ css
-|   |   └─ name.css
+|   |   └─ style.css (Main styles)
 |   └─ img
-|   |   └─ name.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ name.js
+|      └─ box.jpg
+|      └─ jab.jpg
+|      └─ straight.jpg
+|      └─ hook.jpg
+|      └─ uppercut.jpg
+|      └─ slugger-style.jpg
+|      └─ orthodox.jpg
+|      └─ southpaw.jpg
+|      └─ square.jpg
+|      └─ madman.jpg
+|   
+|
 └─ components
-|   └─ name.component.php
-└─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ name.css
-|     |  └─ img
-|     |  |  └─ name.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ name.js
-|     └─ index.php
-└─ utils
-|   └─ Name.utils.php
-└─ index.php
+|   └─ index.php (Navigation component)
+└─ page
+|  └─ assets
+|  |   └─ css
+|  |      └─ style.css (Page-specific styles)
+|  └─ index.php    |  
+|     
+└─ index.php (Landing page)
 └─ readme.md
 ```
 > The following should be renamed: name.css, name.js, name.jpeg/.jpg/.webp/.png, name.component.php(but not the part of the `component.php`), Name.utils.php(but not the part of the `utils.php`)
@@ -143,9 +137,9 @@ AD-ProjectName
 
 <!-- TODO: Add References -->
 
-| Title        | Purpose                                                                       | Link          |
-| ------------ | ----------------------------------------------------------------------------- | ------------- |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| Title        | Purpose                                                                       | Link                           |
+| ------------ | ----------------------------------------------------------------------------- | ------------------------------ |
+| W3Schools    | Learning mainly php, css stylings and themes, especially gradients.           | https://www.w3schools.com/Css/ |
+| Chatgpt      | Assisted with code structure, PHP logic implementation, and troubleshooting.  | https://chatgpt.com/           |
+| Deepseek     | Provided template references and helped optimize CSS animations.              | https://www.deepseek.com/      |
+| Youtube      | Php and css tutorials. Tips and Tricks.                                       | https://www.youtube.com/       |
