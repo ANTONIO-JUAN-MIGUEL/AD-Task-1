@@ -23,7 +23,7 @@
 
 ![](https://visit-counter.vercel.app/counter.png?page=zyx-0314/AD-CI4-Template-Project)
 
-[![wakatime]https://wakatime.com/badge/user/60a37343-62b8-470c-9dcd-bde373a43c33/project/ac90ab81-f1e2-4c44-b1ac-ea82afd3a42d.svg]
+[![wakatime](https://wakatime.com/badge/user/60a37343-62b8-470c-9dcd-bde373a43c33/project/ac90ab81-f1e2-4c44-b1ac-ea82afd3a42d.svg)]
 
 ---
 
